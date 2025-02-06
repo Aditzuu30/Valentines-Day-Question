@@ -71,6 +71,21 @@ function displayCatHeart() {
     // When the cat-heart image is fully loaded, add it to the image container
     catHeartImage.onload = function() {
         imageContainer.appendChild(catHeartImage);
+
+        // Create a new paragraph element for the text
+        var textElement = document.createElement('p');
+        // Set the text content
+        textElement.innerText = 'Te iubesc puchi!';
+        // Style the text
+        textElement.style.textAlign = 'center';
+        textElement.style.fontSize = '32px'; // Mărește dimensiunea fontului
+        textElement.style.marginTop = '20px';
+        textElement.style.color = '#ff69b4'; // Pink color
+        textElement.style.fontFamily = 'Dancing Script, cursive'; // Folosește fontul Dancing Script
+        textElement.style.fontWeight = 'bold'; // Text îngroșat
+        // Append the text element to the image container
+        imageContainer.appendChild(textElement);
+
         // Hide the options container
         document.getElementById('options').style.display = 'none';
     };
